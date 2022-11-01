@@ -1,37 +1,49 @@
-body{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(27,35,48);
+    background-image: url("./images/bg-curvy-desktop.svg");
+    background-color: rgb(21, 31, 43);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 30%;
+    background-size: contain;
     color: white;
     font-family: 'Noto Sans Display', sans-serif;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
-#nav-bar-container{
+#nav-bar-container {
     display: flex;
     height: 6vh;
     margin-top: 6vh;
-    margin-bottom: 7.5vh;
+    margin-bottom: 8vh;
     margin-left: 5vw;
     margin-right: 5vw;
 
 }
 
-#nav-bar-container > #nav-links{
+#nav-bar-container>#nav-links {
     margin-left: auto;
     align-self: center;
 }
 
-#nav-links > a {
+#nav-links>a {
     margin-left: 4vw;
 }
 
-#nav-bar-container > img{
+#nav-bar-container>img {
     height: 5vh;
 }
 
-#hero-container{
+#hero-container {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -47,16 +59,16 @@ body{
 
 }
 
-#hero-img{
+#hero-img {
     width: 50%;
     align-self: center;
 }
 
-#hero-h1{
+#hero-h1 {
     font-size: 1.8em;
 }
 
-#getStarted{
+#getStarted {
     align-self: center;
     color: white;
     margin-top: 1.5vh;
@@ -68,7 +80,7 @@ body{
     background: linear-gradient(to right, rgb(74, 206, 230), rgb(0, 162, 255))
 }
 
-#card-container{
+#card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -78,48 +90,112 @@ body{
     justify-content: center;
 }
 
-.card-item{
+.card-item {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-content: space-around;
     width: 20vw;
-    margin: 2vw;
+    margin: 6vw;
 }
 
-.card-img{
+.card-img {
     align-self: center;
     height: 15vh;
 }
 
-.card-item > p{
+.card-item>p {
     font-size: 0.8em;
 }
 
-#productive-container{
+#productive-container {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 20vh;
 }
 
-#productive-img{
-    height: 25vw;
+#productive-img {
+    width: 40vw;
 }
 
-#text-container{
+#text-container {
     align-self: center;
-    
+    margin-left: 4vw;
+
 }
 
-#productive-container > #text-container > h2 {
+#productive-container>#text-container>h2 {
     font-size: 2em;
-    
+
 }
 
-#productive-container > #text-container > a{
+#productive-container>#text-container>a {
     text-decoration: none;
     color: rgb(74, 206, 230);
     padding-bottom: 0.3em;
     border-bottom: 1px solid rgb(74, 206, 230);
+}
+
+#quotes-container {
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    height: 15vh;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 26vh;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 41, 60);
+    height: 20vh;
+    width: 40vh;
+}
+
+#email-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 25vh;
+    width: 45vw;
+}
+
+#email-container>p {
+    font-size: 0.85em;
+}
+
+#email-input-container {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1vw;
+}
+
+#email_input {
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 20px;
+    padding-left: 30px;
+    margin-right: 1.5vw;
+    width: 25vw;
+}
+
+
+
+#startedBtn {
+    color: white;
+    font-weight: bold;
+    height: 5vh;
+    border: none;
+    width: 10vw;
+    border-radius: 40px;
+    background: linear-gradient(to right, rgb(74, 206, 230), rgb(0, 162, 255));
 }
